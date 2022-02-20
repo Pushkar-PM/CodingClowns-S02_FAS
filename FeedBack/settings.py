@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -171,3 +172,8 @@ SITE_ID = 2
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/user'
 SOCIALACCOUNT_LOGIN_ON_GET = True
+
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
